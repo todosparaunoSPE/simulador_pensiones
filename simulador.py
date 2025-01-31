@@ -18,6 +18,27 @@ from sklearn.metrics import mean_absolute_error
 st.set_page_config(page_title="Simulador de Pensiones", layout="wide", initial_sidebar_state="expanded")
 st.title("📊 **Simulador de Pensiones con Predicción de Rentabilidad**")
 
+
+# Estilo de fondo
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"]{
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;
+</style>
+"""
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
+
+
+
+
 # Título atractivo con una breve descripción
 st.markdown("""
     ### 💡 Descubre cómo tu ahorro para el retiro se puede incrementar con nuestras simulaciones.
